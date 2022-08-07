@@ -1,0 +1,52 @@
+:root {
+/*Colores*/
+--blanco: hsl(0, 0%, 100%);
+--negro: hsl(0, 0%, 1%);
+--primario: hsl(229, 33%, 37%);
+--secundario: hsl(34, 73%, 46%);
+/*Tamaño de fuentes*/
+--f-titulo: 0.9rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'f2', Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: right;
+    font-size: var(--f-titulo);
+    color: var(--secundario);
+    text-transform: uppercase;
+}
+
+.nav-bg {
+    background-color: var(--primario);
+}
+
+.nav-cont {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-color {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-color a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.nav-color a:hover {
+    background-color: var(--secundario);
+    color: var(--negro);
+}
