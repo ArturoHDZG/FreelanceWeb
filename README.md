@@ -4,6 +4,11 @@ Ver pagina web [aquí](https://arturohdzg.github.io/FreelanceWeb/)
 ## Creación de primer proyecto web estático usando HTML y CSS
 Aquí iré documentando cada avance del proceso desde el inicio hasta el fin.
 
+### Versión 0.1.0-beta (07/08/2022)
+* Código CSS base agregado
+* Creada hoja de estilo
+
+Ver avance del proyecto [aquí](https://github.com/ArturoHDZG/FreelanceWeb/releases/tag/v0.1.0)
 ### Versión 0.0.1 (06/08/2022)
 * Terminada toda la estructura básica del archivo *index.html*
 * Creada página web en GitHub
