@@ -29,13 +29,20 @@ body {
 }
 
 .nav-cont {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 .nav-color {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nav-color {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .nav-color a {
@@ -49,4 +56,10 @@ body {
 .nav-color a:hover {
     background-color: var(--secundario);
     color: var(--negro);
+}
+
+.hero {
+    background-image: url(../img/index/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
