@@ -82,6 +82,30 @@
     </main>
     <section>
         <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend>Contáctame llenando todos los campos</legend>
+                <div>
+                    <label name="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
+                </div>
+                <div>
+                    <label name="tel">Teléfono</label>
+                    <input type="tel" name="tel" id="tel" placeholder="(555) 555-5555" required>
+                </div>
+                <div>
+                    <label name="email">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="nombre@dominio.com" required>
+                </div>
+                <div>
+                    <label name="comentarios">Mensaje</label>
+                    <textarea name="comentarios" id="comentarios" placeholder="Escribe aquí tu mensaje"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </section>
     <footer>
         <p>Copyright 2022. Arturo Hernández Garza</p>
