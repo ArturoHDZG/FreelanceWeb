@@ -5,17 +5,21 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
-
     font-family: 'Krub', sans-serif;
 }
 
 /* Estilos generales */
+*, *:before, *:after { /*! Box Model */
+    box-sizing: inherit;
+}
+
 html {
-    font-size: 62.5%; /* Establece 10px = 1rem */
+    box-sizing: border-box; /*! Box Model */
+    font-size: 62.5%; /*! Establece 10px = 1rem */
 }
 
 body {
-    font-size: 16px; /* Establece 10px = 1rem */
+    font-size: 16px; /*! Establece 10px = 1rem */
     text-align: center;
 }
 
@@ -41,17 +45,42 @@ span {
 /* Navegación del Body */
 nav {
     display: flex; /* Habilita Flexbox */
+    flex-direction: column;
     margin: 0 auto;
-    justify-content: space-between;
-    width: 120rem;
+    max-width: 120rem;
 }
 
 nav a {
+    display: block;
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem; /* Padding: Rellena de afuera hacia dentro */
 }
 
-.container { /* Contenedor para rellenar el background */
+.NavContainer { /* Contenedor para rellenar el background */
     background-color: var(--secundario);
+}
+
+/* Media Query del Header */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Flexbox ya establecido en el padre nav */
+        justify-content: space-between;
+    }
+}
+
+/* Background Cabecera */
+.BackgroundImage {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative; /* Padre con posición relativa */
+}
+
+.BgImgContent {
+    background-color: rgb(0 0 0 / 70%);
+    position: absolute; /* Hijo con posición absoluta */
+    width: 100%;
+    height: 100%;
 }
