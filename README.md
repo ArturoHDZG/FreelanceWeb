@@ -1,4 +1,6 @@
 # FreelanceWeb
+
+![](https://user-images.githubusercontent.com/110303654/185343498-6dc41f8b-0e94-4425-bf54-21a6ae23dae0.jpg)
 ## Ver pagina web [aquí](https://arturohdzg.github.io/FreelanceWeb/)
 
 Creación de primer proyecto web estático usando HTML y CSS  
